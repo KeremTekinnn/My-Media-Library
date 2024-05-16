@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\SettingController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,9 +18,20 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome');
 
-Route::view('dashboard', 'dashboard')
+Route::get('dashboard', [DashboardController::class, 'index'])
     ->middleware(['auth', 'verified'])
     ->name('dashboard');
+
+Route::post('dashboard', [DashboardController::class, 'createPost'])->name('dashboard.createPost');
+Route::delete('dashboard/{photo}', [DashboardController::class, 'destroy'])->name('dashboard.destroy');
+
+Route::post('photos', [PhotoController::class, 'store'])
+->middleware(['auth', 'verified'])
+->name('photos.store');
+
+Route::put('settings', [SettingController::class, 'update'])
+    ->middleware(['auth', 'verified'])
+    ->name('settings.update');
 
 Route::view('profile', 'profile')
     ->middleware(['auth'])
