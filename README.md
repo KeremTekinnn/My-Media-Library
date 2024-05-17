@@ -1,66 +1,34 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTbK7DiM9MGrS8Ae6AUaqTsHqHgKh6f38vX3LKNbQ5UIIalL87P" width="400" alt="Logo"></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+## About My Media Library
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+My Media Library is a web application built with Laravel, a framework with expressive, elegant syntax. This application allows users to upload, manage, and view their media files in a central location. Here are some of the key features:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- **Photo Upload**: Users can select and upload multiple photos at once. The upload process starts immediately after the selection of photos.
+- **Upload Progress Feedback**: During the upload process, a progress bar or similar indicator is displayed. Users receive a notification when the upload is successfully completed or if it fails.
+- **Media Library**: All uploaded photos are displayed in a grid or list format, with the newest uploads shown first. Each photo has a thumbnail for quick identification.
+- **Photo Descriptions**: Users have the option to add a description to each photo during the upload process. This description is stored in the database along with the photo.
+- **Photo Deletion**: Users can delete uploaded photos. A confirmation is required before the photo is permanently deleted.
+- **Photo Search**: Users can search for photos based on the filename or description. The search results are filtered immediately based on the search query.
+- **File Size Limit**: Administrators can limit the size of the uploaded files to manage server space efficiently. Users receive an error message if the file is too large.
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-## Learning Laravel
+## Goal of this Project
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+The goal of this project is to develop a cost-effective, easy-to-use, and customizable photo upload and media library solution using Laravel 11. This solution will enable users and organizations to efficiently manage and organize their digital photos and media .
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Requirements
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Before you start using My Media Library, make sure you have the following:
 
-## Laravel Sponsors
+- **Laravel 11 installation**: You need to have Laravel 11 installed on your local development environment. You can download it from the [official Laravel website](https://laravel.com).
+- **Text editor or IDE**: You need a text editor or an Integrated Development Environment (IDE) to view and edit the code. Some popular choices include [Visual Studio Code](https://code.visualstudio.com/), [Sublime Text](https://www.sublimetext.com/), and [PHPStorm](https://www.jetbrains.com/phpstorm/).
+- **MySQL or another database**: This project uses a database to store data. You need to have MySQL or another compatible database configured and running on your system.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Please ensure you have all these requirements before you start using My Media Library.
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
